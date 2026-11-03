@@ -1,0 +1,51 @@
+/* Buttons */
+.ac4-btn{position:relative;isolation:isolate;overflow:hidden;display:inline-flex;align-items:center;justify-content:center;gap:10px;height:48px;padding:0 24px;border:1px solid transparent;border-radius:var(--radius-button);font-family:var(--font-body);font-size:15px;font-weight:700;letter-spacing:var(--ls-button);line-height:1;text-decoration:none;white-space:nowrap;cursor:pointer;transition:transform var(--dur-fast) var(--ease-standard),box-shadow var(--dur-base) var(--ease-standard),background-color var(--dur-fast),border-color var(--dur-fast),color var(--dur-fast),filter var(--dur-fast)}
+.ac4-btn--sm{height:38px;padding:0 16px;font-size:14px}
+.ac4-btn--lg{height:56px;padding:0 30px;font-size:16px}
+.ac4-btn--block{width:100%}
+.ac4-btn svg{flex:none}
+.ac4-btn:focus-visible{outline:none;box-shadow:var(--ring-focus)}
+.ac4-btn:active{transform:translateY(1px)}
+.ac4-btn--primary{background:var(--gradient-gold-flat);color:var(--text-on-gold);box-shadow:var(--glow-gold-sm),inset 0 1px 0 rgba(255,255,255,.35)}
+.ac4-btn--primary:hover{filter:brightness(1.07);transform:translateY(-1px);box-shadow:0 10px 30px -8px rgba(217,169,72,.7),inset 0 1px 0 rgba(255,255,255,.4);color:var(--text-on-gold)}
+.ac4-btn--primary:active{filter:brightness(.94)}
+.ac4-btn--shimmer::after{content:"";position:absolute;z-index:-1;inset:0 auto 0 0;width:40%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.55),transparent);animation:ac4-shimmer var(--dur-shimmer) var(--ease-in-out) infinite;pointer-events:none}
+.ac4-btn--secondary{background:var(--blue-600);color:var(--white);box-shadow:var(--inset-highlight)}
+.ac4-btn--secondary:hover{background:#0A74D6;box-shadow:var(--glow-blue-sm);transform:translateY(-1px);color:var(--white)}
+.ac4-btn--secondary:active{background:var(--blue-700)}
+.ac4-btn--outline{background:transparent;color:var(--white);border-color:var(--border-strong)}
+.ac4-btn--outline:hover{border-color:var(--blue-300);background:rgba(62,150,226,.10);color:var(--white)}
+.ac4-btn--outline:active{background:rgba(62,150,226,.18)}
+.ac4-btn--ghost{background:transparent;color:var(--text-secondary)}
+.ac4-btn--ghost:hover{background:rgba(255,255,255,.06);color:var(--white)}
+.ac4-btn--ghost:active{background:rgba(255,255,255,.10)}
+.ac4-btn:disabled,.ac4-btn[aria-disabled="true"]{opacity:.38;cursor:not-allowed;transform:none;filter:none;box-shadow:none}
+.ac4-btn:disabled::after{display:none}
+@media (prefers-reduced-motion:reduce){.ac4-btn--shimmer::after{animation:none;display:none}}
+
+/* Badges */
+.ac4-badge{display:inline-flex;align-items:center;gap:6px;height:24px;padding:0 10px;border-radius:var(--radius-badge);border:1px solid transparent;font-family:var(--font-body);font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;line-height:1;white-space:nowrap}
+.ac4-badge--gold{background:var(--gradient-gold-flat);color:var(--night-900)}
+.ac4-badge--gold-outline{border-color:var(--border-gold);color:var(--gold-300)}
+.ac4-badge--blue{background:rgba(35,119,227,.16);border-color:var(--border-blue);color:var(--blue-200)}
+.ac4-badge--neutral{background:rgba(255,255,255,.06);border-color:var(--border-default);color:var(--text-secondary)}
+.ac4-badge--light{background:var(--night-900);color:var(--white)}
+
+/* Divider / hairline */
+.ac4-divider{height:1px;border:0;margin:0;background:var(--border-default)}
+.ac4-divider--gold{background:var(--gradient-hairline)}
+.ac4-divider--blue{background:var(--gradient-hairline-blue)}
+.ac4-rule-gold{display:block;width:48px;height:3px;border-radius:2px;background:var(--gradient-gold-flat)}
+
+/* Slogan */
+.ac4-slogan{display:inline-flex;flex-wrap:wrap;align-items:center;gap:.6em;font-family:var(--font-body);font-weight:700;font-size:var(--fs-eyebrow);letter-spacing:var(--ls-eyebrow);text-transform:uppercase;color:var(--text-secondary)}
+.ac4-slogan__dot{width:4px;height:4px;border-radius:50%;background:var(--gold-500)}
+.ac4-slogan__last{color:var(--gold-500)}
+
+/* Section header */
+.ac4-sh{display:flex;flex-direction:column;gap:16px;max-width:760px}
+.ac4-sh--center{align-items:center;text-align:center;margin-inline:auto}
+.ac4-sh__eyebrow{display:inline-flex;align-items:center;gap:12px}
+.ac4-sh__eyebrow::before{content:"";width:24px;height:2px;background:var(--gold-500);border-radius:2px}
+.ac4-sh--center .ac4-sh__eyebrow::after{content:"";width:24px;height:2px;background:var(--gold-500);border-radius:2px}
+.ac4-sh__title{font-size:var(--fs-h2)}

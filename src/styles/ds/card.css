@@ -1,0 +1,17 @@
+/* Cards + bento */
+.ac4-card{position:relative;display:flex;flex-direction:column;gap:12px;padding:28px;border-radius:var(--radius-card);background:var(--surface-card);border:1px solid var(--border-subtle);box-shadow:var(--inset-highlight);overflow:hidden;transition:transform var(--dur-base) var(--ease-out),border-color var(--dur-base),box-shadow var(--dur-base) var(--ease-out)}
+.ac4-card--interactive:hover{transform:translateY(-4px);border-color:var(--border-blue);box-shadow:var(--glow-blue),var(--inset-highlight)}
+.ac4-card--interactive:focus-within{border-color:var(--border-blue)}
+.ac4-card--spotlight::before{content:"";position:absolute;inset:0;pointer-events:none;opacity:0;background:radial-gradient(360px circle at var(--mx,50%) var(--my,0%),rgba(62,150,226,.14),transparent 60%);transition:opacity var(--dur-base)}
+.ac4-card--spotlight:hover::before{opacity:1}
+.ac4-card--feature{background:linear-gradient(160deg,rgba(0,45,123,.55) 0%,rgba(5,8,27,.9) 70%);border-color:var(--border-blue)}
+.ac4-card--gold{border-color:var(--border-gold)}
+.ac4-card--flat{background:transparent}
+.ac4-card__icon{display:grid;place-items:center;width:48px;height:48px;border-radius:14px;background:rgba(35,119,227,.14);border:1px solid var(--border-blue);color:var(--blue-300)}
+.ac4-card__icon--gold{background:rgba(217,169,72,.12);border-color:var(--border-gold);color:var(--gold-400)}
+.ac4-card__title{font-family:var(--font-display);font-size:var(--fs-h4);font-weight:600;text-transform:uppercase;line-height:1.15;letter-spacing:.01em}
+.ac4-card__body{color:var(--text-secondary);font-size:15px;line-height:1.6}
+.ac4-card__index{font-family:var(--font-numeric);font-size:14px;font-weight:500;color:var(--text-muted);letter-spacing:.08em}
+.ac4-bento{display:grid;gap:var(--bento-gap);grid-template-columns:minmax(0,1fr)}
+@media (min-width:768px){.ac4-bento{grid-template-columns:repeat(6,minmax(0,1fr))}.ac4-bento>*{grid-column:span 3}.ac4-bento>.span-2{grid-column:span 2}.ac4-bento>.span-4{grid-column:span 4}.ac4-bento>.span-6{grid-column:span 6}.ac4-bento>.row-2{grid-row:span 2}}
+@media (prefers-reduced-motion:reduce){.ac4-card--interactive:hover{transform:none}}

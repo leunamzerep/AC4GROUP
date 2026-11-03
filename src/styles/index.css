@@ -1,0 +1,80 @@
+/* Entrada de estilos.
+   - Tailwind v4 (utilidades para layout).
+   - Tokens y componentes del design system AC4 (src/styles/ds), copiados tal cual de Claude Design.
+   Los CSS del DS van en capas para que las utilidades de Tailwind puedan sobrescribirlos. */
+@import "tailwindcss";
+
+@import "./ds/fonts.css";
+@import "./ds/colors.css" layer(base);
+@import "./ds/typography.css" layer(base);
+@import "./ds/spacing.css" layer(base);
+@import "./ds/effects.css" layer(base);
+@import "./ds/motion.css" layer(base);
+@import "./ds/base.css" layer(base);
+@import "./ds/core.css" layer(components);
+@import "./ds/card.css" layer(components);
+@import "./ds/navigation.css" layer(components);
+@import "./ds/pricing.css" layer(components);
+@import "./ds/data.css" layer(components);
+@import "./ds/legal.css" layer(components);
+
+/* Tokens del DS expuestos a Tailwind: bg-night-950, text-gold-500, font-display, etc.
+   "inline" = Tailwind usa var(--token) del DS, así un solo lugar define cada valor. */
+@theme inline {
+  --color-*: initial;
+  --color-white: var(--white);
+  --color-black: var(--black);
+  --color-transparent: transparent;
+  --color-current: currentColor;
+
+  --color-gold-50: var(--gold-50);
+  --color-gold-100: var(--gold-100);
+  --color-gold-200: var(--gold-200);
+  --color-gold-300: var(--gold-300);
+  --color-gold-400: var(--gold-400);
+  --color-gold-500: var(--gold-500);
+  --color-gold-600: var(--gold-600);
+  --color-gold-700: var(--gold-700);
+  --color-gold-800: var(--gold-800);
+  --color-gold-900: var(--gold-900);
+
+  --color-blue-50: var(--blue-50);
+  --color-blue-100: var(--blue-100);
+  --color-blue-200: var(--blue-200);
+  --color-blue-300: var(--blue-300);
+  --color-blue-400: var(--blue-400);
+  --color-blue-500: var(--blue-500);
+  --color-blue-600: var(--blue-600);
+  --color-blue-700: var(--blue-700);
+  --color-blue-800: var(--blue-800);
+  --color-blue-900: var(--blue-900);
+
+  --color-night-50: var(--night-50);
+  --color-night-100: var(--night-100);
+  --color-night-200: var(--night-200);
+  --color-night-300: var(--night-300);
+  --color-night-400: var(--night-400);
+  --color-night-500: var(--night-500);
+  --color-night-600: var(--night-600);
+  --color-night-700: var(--night-700);
+  --color-night-800: var(--night-800);
+  --color-night-900: var(--night-900);
+  --color-night-950: var(--night-950);
+
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-muted: var(--text-muted);
+
+  --font-display: var(--font-display);
+  --font-body: var(--font-body);
+  --font-numeric: var(--font-numeric);
+
+  --radius-card: var(--radius-card);
+  --radius-xl: var(--radius-xl);
+  --radius-pill: var(--radius-pill);
+
+  --breakpoint-sm: 480px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+}

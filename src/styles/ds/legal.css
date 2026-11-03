@@ -1,0 +1,29 @@
+/* Legal documents (Términos y Condiciones, Política de Privacidad — Ley 1581 de 2012).
+   Same tokens, tuned for long reading: no aurora, no glass, no motion. */
+.ac4-legal{background:var(--night-900);color:var(--text-secondary);min-height:100vh}
+.ac4-legal__header{border-bottom:1px solid var(--border-subtle);background:var(--black)}
+.ac4-legal__bar{display:flex;align-items:center;justify-content:space-between;gap:16px;height:64px}
+.ac4-legal__hero{padding-block:clamp(48px,6vw,80px) 32px;border-bottom:1px solid var(--border-subtle)}
+.ac4-legal__hero h1{font-size:var(--fs-h2);color:var(--white);margin-top:12px}
+.ac4-legal__meta{display:flex;flex-wrap:wrap;gap:8px 24px;margin-top:16px;font-size:14px;color:var(--text-muted)}
+.ac4-legal__layout{display:grid;gap:48px;padding-block:48px 96px}
+@media (min-width:1024px){.ac4-legal__layout{grid-template-columns:240px minmax(0,var(--container-legal));justify-content:center}}
+.ac4-legal__toc{align-self:start;display:flex;flex-direction:column;gap:2px;font-size:14px}
+@media (min-width:1024px){.ac4-legal__toc{position:sticky;top:24px}}
+.ac4-legal__toc p{font-size:12px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--text-muted);margin-bottom:10px}
+.ac4-legal__toc a{display:block;padding:6px 12px;border-left:2px solid var(--border-subtle);color:var(--text-secondary);text-decoration:none}
+.ac4-legal__toc a:hover{color:var(--white);border-left-color:var(--gold-500)}
+.ac4-legal__body{font-size:17px;line-height:var(--lh-legal);max-width:var(--container-legal)}
+.ac4-legal__body h2{font-family:var(--font-display);font-size:24px;font-weight:600;color:var(--white);margin:48px 0 12px;scroll-margin-top:24px}
+.ac4-legal__body h2:first-child{margin-top:0}
+.ac4-legal__body h3{font-family:var(--font-body);font-size:17px;font-weight:800;text-transform:none;letter-spacing:0;color:var(--white);margin:28px 0 8px}
+.ac4-legal__body p{margin:0 0 16px}
+.ac4-legal__body ul,.ac4-legal__body ol{margin:0 0 16px;padding-left:22px}
+.ac4-legal__body li{margin-bottom:8px}
+.ac4-legal__body li::marker{color:var(--gold-500)}
+.ac4-legal__body strong{color:var(--white)}
+.ac4-legal__body table{width:100%;border-collapse:collapse;margin:8px 0 24px;font-size:15px}
+.ac4-legal__body th,.ac4-legal__body td{padding:12px 14px;border:1px solid var(--border-default);text-align:left;vertical-align:top}
+.ac4-legal__body th{background:var(--night-800);color:var(--white);font-weight:700}
+.ac4-legal__callout{padding:20px 24px;margin:0 0 24px;border-radius:var(--radius-md);background:var(--night-800);border:1px solid var(--border-default)}
+@media print{.ac4-legal,.ac4-legal__header{background:#fff;color:#111}.ac4-legal__body h2,.ac4-legal__body h3,.ac4-legal__body strong,.ac4-legal__hero h1{color:#000}.ac4-legal__toc{display:none}}

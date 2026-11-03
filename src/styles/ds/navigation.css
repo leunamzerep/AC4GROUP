@@ -1,0 +1,44 @@
+/* Navbar (glass) */
+.ac4-nav{position:sticky;top:0;z-index:var(--z-header);background:var(--glass-bg);-webkit-backdrop-filter:var(--glass-blur);backdrop-filter:var(--glass-blur);border-bottom:1px solid var(--glass-border)}
+.ac4-nav__inner{display:flex;align-items:center;gap:24px;height:var(--header-h)}
+.ac4-nav__brand{display:flex;align-items:center;flex:none;color:var(--white);text-decoration:none}
+.ac4-nav__links{display:none;align-items:center;gap:4px;margin:0 auto;padding:0;list-style:none}
+.ac4-nav__link{position:relative;display:block;padding:8px 12px;border-radius:8px;font-size:14px;font-weight:600;color:var(--text-secondary);text-decoration:none;transition:color var(--dur-fast),background-color var(--dur-fast)}
+.ac4-nav__link:hover{color:var(--white);background:rgba(255,255,255,.05)}
+.ac4-nav__link[aria-current="true"]{color:var(--white)}
+.ac4-nav__link[aria-current="true"]::after{content:"";position:absolute;left:12px;right:12px;bottom:2px;height:2px;border-radius:2px;background:var(--gold-500)}
+.ac4-nav__actions{display:flex;align-items:center;gap:12px;margin-left:auto}
+.ac4-nav__cta{display:none}
+.ac4-nav__toggle{display:grid;place-items:center;width:44px;height:44px;border-radius:12px;border:1px solid var(--border-default);background:transparent;color:var(--white);cursor:pointer}
+.ac4-nav__toggle:hover{border-color:var(--blue-300)}
+.ac4-nav__drawer{display:flex;flex-direction:column;gap:4px;padding:8px var(--gutter) 24px;border-top:1px solid var(--glass-border)}
+.ac4-nav__drawer .ac4-nav__link{padding:14px 4px;font-size:17px;border-bottom:1px solid var(--border-subtle);border-radius:0}
+.ac4-nav__drawer .ac4-btn{margin-top:16px}
+@media (min-width:1024px){.ac4-nav__links{display:flex}.ac4-nav__cta{display:inline-flex}.ac4-nav__toggle,.ac4-nav__drawer{display:none}.ac4-nav__actions{margin-left:0}}
+
+/* Language switch */
+.ac4-lang{display:inline-flex;padding:3px;gap:2px;border-radius:var(--radius-pill);border:1px solid var(--border-default);background:rgba(255,255,255,.03)}
+.ac4-lang__opt{min-width:40px;height:30px;padding:0 10px;border:0;border-radius:var(--radius-pill);background:transparent;color:var(--text-muted);font-family:var(--font-body);font-size:12px;font-weight:800;letter-spacing:.1em;cursor:pointer;transition:background-color var(--dur-fast),color var(--dur-fast)}
+.ac4-lang__opt:hover{color:var(--white)}
+.ac4-lang__opt[aria-pressed="true"]{background:var(--night-50);color:var(--night-900)}
+.ac4-lang__opt:focus-visible{outline:2px solid var(--focus-ring);outline-offset:1px}
+.ac4-lang__opt:disabled{opacity:.4;cursor:not-allowed}
+
+/* Footer */
+.ac4-footer{border-top:1px solid var(--border-subtle);background:var(--black);padding-block:64px 32px;font-size:15px}
+.ac4-footer__grid{display:grid;gap:40px;grid-template-columns:minmax(0,1fr)}
+@media (min-width:768px){.ac4-footer__grid{grid-template-columns:1.6fr repeat(3,minmax(0,1fr))}}
+.ac4-footer__about{display:flex;flex-direction:column;gap:20px;max-width:340px;color:var(--text-muted)}
+.ac4-footer__title{margin:0 0 16px;font-family:var(--font-body);font-size:12px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--text-muted)}
+.ac4-footer__list{display:flex;flex-direction:column;gap:12px;margin:0;padding:0;list-style:none}
+.ac4-footer__list a{display:inline-flex;align-items:center;gap:10px;color:var(--text-secondary);text-decoration:none}
+.ac4-footer__list a:hover{color:var(--white)}
+.ac4-footer__bottom{display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-between;align-items:center;margin-top:56px;padding-top:24px;border-top:1px solid var(--border-subtle);font-size:13px;color:var(--text-muted)}
+
+/* WhatsApp FAB */
+.ac4-fab{position:fixed;right:20px;bottom:20px;z-index:var(--z-fab);display:inline-flex;align-items:center;gap:10px;height:56px;padding:0 16px;border-radius:var(--radius-pill);background:var(--gradient-gold-flat);color:var(--night-900);text-decoration:none;font-weight:800;font-size:14px;box-shadow:0 12px 32px -8px rgba(0,0,0,.7),var(--glow-gold-sm);transition:transform var(--dur-base) var(--ease-out),filter var(--dur-fast)}
+.ac4-fab:hover{transform:translateY(-2px);filter:brightness(1.06);color:var(--night-900)}
+.ac4-fab:focus-visible{outline:none;box-shadow:var(--ring-focus)}
+.ac4-fab__label{display:none}
+@media (min-width:768px){.ac4-fab{padding:0 20px 0 16px}.ac4-fab__label{display:inline}}
+.ac4-fab--static{position:relative;right:auto;bottom:auto}

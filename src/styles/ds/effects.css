@@ -1,0 +1,29 @@
+:root{
+  /* Gradients */
+  --gradient-night:linear-gradient(90deg,#000000 0%,#05081B 55%,#070922 100%);/* @kind color */ /* deck background */
+  --gradient-night-v:linear-gradient(180deg,#030409 0%,#05081B 60%,#070922 100%);/* @kind color */
+  --gradient-gold:linear-gradient(180deg,#F9E296 0%,#E3BF60 45%,#D9A948 70%,#B98A33 100%);/* @kind color */ /* GROUP lettering */
+  --gradient-gold-flat:linear-gradient(135deg,#EED17A 0%,#D9A948 100%);/* @kind color */
+  --gradient-blue:linear-gradient(135deg,#62B2E7 0%,#2377E3 45%,#002D7B 100%);/* @kind color */
+  --gradient-aurora:radial-gradient(60% 55% at 50% 0%,rgba(35,119,227,.42) 0%,rgba(0,45,123,.18) 45%,transparent 75%),radial-gradient(30% 30% at 78% 18%,rgba(217,169,72,.16) 0%,transparent 70%),radial-gradient(40% 40% at 15% 30%,rgba(98,178,231,.16) 0%,transparent 70%);/* @kind color */
+  --gradient-hairline:linear-gradient(90deg,transparent,rgba(217,169,72,.8),transparent);/* @kind color */
+  --gradient-hairline-blue:linear-gradient(90deg,transparent,rgba(98,178,231,.7),transparent);/* @kind color */
+  --texture-grid:linear-gradient(rgba(195,202,217,.05) 1px,transparent 1px) 0 0/48px 48px,linear-gradient(90deg,rgba(195,202,217,.05) 1px,transparent 1px) 0 0/48px 48px;/* @kind color */
+  --texture-dots:radial-gradient(rgba(195,202,217,.12) 1px,transparent 1.2px) 0 0/22px 22px;/* @kind color */
+
+  /* Shadows & glows */
+  --shadow-sm:0 1px 2px rgba(0,0,0,.4);
+  --shadow-md:0 8px 24px -8px rgba(0,0,0,.6);
+  --shadow-lg:0 24px 60px -20px rgba(0,0,0,.75);
+  --glow-blue-sm:0 0 0 1px rgba(62,150,226,.35),0 8px 28px -10px rgba(35,119,227,.55);
+  --glow-blue:0 0 0 1px rgba(62,150,226,.45),0 18px 50px -16px rgba(35,119,227,.6);
+  --glow-gold-sm:0 6px 22px -8px rgba(217,169,72,.55);
+  --glow-gold:0 0 0 1px rgba(217,169,72,.6),0 20px 60px -18px rgba(217,169,72,.5);
+  --inset-highlight:inset 0 1px 0 rgba(255,255,255,.08);
+  --ring-focus:0 0 0 2px var(--night-900),0 0 0 4px var(--blue-300);
+
+  /* Glass — navbar + pricing cards only */
+  --glass-blur:blur(16px) saturate(140%);/* @kind other */
+  --glass-bg:rgba(5,8,27,.62);
+  --glass-border:rgba(195,202,217,.14);
+}

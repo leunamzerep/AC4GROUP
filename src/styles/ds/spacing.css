@@ -1,0 +1,20 @@
+:root{
+  /* Spacing — 4px base */
+  --space-0:0;--space-1:4px;--space-2:8px;--space-3:12px;--space-4:16px;--space-5:20px;--space-6:24px;
+  --space-8:32px;--space-10:40px;--space-12:48px;--space-16:64px;--space-20:80px;--space-24:96px;--space-32:128px;
+  --section-y:clamp(72px,8vw + 32px,144px);/* @kind spacing */
+  --gutter:clamp(20px,4vw,40px);/* @kind spacing */
+  --container:1200px;/* @kind spacing */--container-narrow:760px;/* @kind spacing */--container-legal:720px;/* @kind spacing */
+  --bento-gap:clamp(12px,1.4vw,20px);/* @kind spacing */
+  --header-h:72px;/* @kind spacing */
+
+  /* Radii */
+  --radius-xs:4px;--radius-sm:8px;--radius-md:12px;--radius-lg:20px;--radius-xl:28px;--radius-pill:999px;
+  --radius-button:var(--radius-pill);--radius-card:var(--radius-lg);--radius-badge:var(--radius-pill);
+
+  /* Breakpoints (mobile-first, use as min-width) */
+  --bp-sm:480px;/* @kind spacing */--bp-md:768px;/* @kind spacing */--bp-lg:1024px;/* @kind spacing */--bp-xl:1280px;/* @kind spacing */
+
+  /* Z */
+  --z-header:50;/* @kind other */--z-fab:60;/* @kind other */--z-overlay:80;/* @kind other */
+}

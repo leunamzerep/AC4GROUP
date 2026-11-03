@@ -1,0 +1,62 @@
+/* AC4 Group — color tokens.
+   Source HEX (sampled from attachments):
+   gold  #D9A948 base / #F9E296 highlight  — "GROUP" in the Instagram post
+   blue  #2377E3                            — "META ADS" in the Instagram post
+   blue  #62B2E7 #3E96E2 #076AC5 #002D7B #00113C — 3D waves in the commercial deck
+   night #000000 → #070922                  — deck background gradient; #030409 IG background
+   NO silver. Zumia palette does not apply. */
+:root{
+  /* Gold — value & conversion. Use sparingly. */
+  --gold-50:#FDF8E9;--gold-100:#FAEFC8;--gold-200:#F9E296;--gold-300:#EED17A;--gold-400:#E3BF60;
+  --gold-500:#D9A948;--gold-600:#B98A33;--gold-700:#946C27;--gold-800:#6E501E;--gold-900:#4A3515;
+  /* Blue — atmosphere, tech, data */
+  --blue-50:#EAF4FD;--blue-100:#CFE6FA;--blue-200:#A3D0F3;--blue-300:#62B2E7;--blue-400:#3E96E2;
+  --blue-500:#2377E3;--blue-600:#076AC5;--blue-700:#0A4FA0;--blue-800:#002D7B;--blue-900:#00113C;
+  /* Night — dark neutrals (blue-tinted) */
+  --night-50:#F3F5FA;--night-100:#E3E7F0;--night-200:#C3CAD9;--night-300:#98A2B8;--night-400:#6B7591;
+  --night-500:#464F6B;--night-600:#2A3150;--night-700:#161C38;--night-800:#0A0E26;--night-900:#05081B;--night-950:#030409;
+  --black:#000000;--white:#FFFFFF;
+
+  /* Semantic — surfaces */
+  --bg-page:var(--night-950);
+  --bg-section:var(--night-900);
+  --surface-card:rgba(10,14,38,.72);
+  --surface-card-solid:var(--night-800);
+  --surface-raised:var(--night-700);
+  --surface-glass:rgba(5,8,27,.62);
+  --surface-light:var(--night-50);
+
+  /* Semantic — text (AA on --night-900) */
+  --text-primary:var(--white);          /* 19.6:1 */
+  --text-secondary:var(--night-200);    /* 12.3:1 */
+  --text-muted:var(--night-300);        /*  7.6:1 */
+  --text-on-gold:var(--night-900);      /*  9.1:1 on gold-500 */
+  --text-on-light:var(--night-900);
+  --text-gold:var(--gold-500);          /*  9.1:1 */
+  --text-blue:var(--blue-300);          /*  8.4:1 — use for blue text/links */
+  --text-blue-strong:var(--blue-400);   /*  6.3:1 */
+  /* --blue-500 is 4.5:1 on night-900: large text, icons and fills only */
+
+  /* Semantic — lines */
+  --border-subtle:rgba(195,202,217,.12);
+  --border-default:rgba(195,202,217,.20);
+  --border-strong:rgba(195,202,217,.36);
+  --border-blue:rgba(62,150,226,.45);
+  --border-gold:rgba(217,169,72,.55);
+
+  /* Semantic — accents */
+  --accent-cta:var(--gold-500);
+  --accent-cta-hover:var(--gold-400);
+  --accent-data:var(--blue-500);
+  --accent-data-soft:var(--blue-300);
+  --check:var(--blue-300);
+  --check-gold:var(--gold-500);
+  --focus-ring:var(--blue-300);
+  --danger:#F26B6B;
+
+  /* Plans */
+  --plan-platinum-bg:linear-gradient(160deg,#F3F5FA 0%,#C3CAD9 140%);/* @kind color */
+  --plan-platinum-fg:var(--night-900);/* @kind color */
+  --plan-gold-fg:var(--gold-500);/* @kind color */
+  --plan-black-bg:#000000;/* @kind color */
+}
