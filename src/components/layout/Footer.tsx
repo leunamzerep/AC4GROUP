@@ -74,7 +74,7 @@ export default function Footer() {
           <span>{f.copyright}</span>
           <span>
             {f.credit}{' '}
-            <a href={SITE.credit.url} target="_blank" rel="noopener noreferrer" className="text-text-secondary">
+            <a href={SITE.credit.url} target="_blank" rel="noopener noreferrer" className="inline-block py-[3px] text-text-secondary">
               {SITE.credit.name}
             </a>
           </span>

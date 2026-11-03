@@ -4,7 +4,7 @@ import type { BrandName, LucideName } from './iconData'
 
 type Props = AnchorHTMLAttributes<HTMLAnchorElement> & {
   href: string
-  variant?: 'primary' | 'secondary' | 'outline' | 'ghost'
+  variant?: 'primary' | 'secondary' | 'outline' | 'ghost' | 'dark'
   size?: 'sm' | 'md' | 'lg'
   /** Brillo animado: solo en el CTA principal (máx. uno por pantalla). */
   shimmer?: boolean

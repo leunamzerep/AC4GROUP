@@ -97,7 +97,7 @@ export default function Packages() {
                     <div className="ac4-plan__foot" data-cta>
                       {plan.id === 'platinum' ? (
                         // Platinum es claro: botón oscuro para contraste (como en el diseño).
-                        <Button href={wa} target="_blank" block iconRight="arrow-right" variant="ghost" className="bg-night-900 text-white shadow-[var(--inset-highlight)] hover:bg-night-700 hover:text-white">
+                        <Button href={wa} target="_blank" block iconRight="arrow-right" variant="dark">
                           {plan.cta}
                         </Button>
                       ) : (
