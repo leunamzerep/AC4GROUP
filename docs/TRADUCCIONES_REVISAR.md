@@ -4,7 +4,7 @@ Generado el 2026-11-03 a partir de `src/content/es.json` y `src/content/en.json`
 Marca cada casilla al aprobarla. Si quieres cambiar un texto, edítalo en `src/content/en.json` (clave indicada).
 
 Total: 143 textos. Los nombres propios (AC4 Group, AMAB Tienda Virtual, Platinum/Gold/Black, Meta Ads, HubSpot) no se traducen.
-Los textos legales en inglés se listarán aparte en la fase 7.
+Los textos legales en inglés están al final de este documento.
 
 ## WhatsApp
 
