@@ -27,15 +27,15 @@ export default function NumberTicker({ value, prefix = '', locale, className = '
     if (!inView || reduce || started.current) return
     started.current = true
     const ms = MOTION.tickerDuration * 1000
-    let raf = 0
+    const frame = { id: 0 }
     const t0 = performance.now()
     const step = (t: number) => {
       const p = Math.min(1, (t - t0) / ms)
       setN(value * easeOutCubic(p))
-      if (p < 1) raf = requestAnimationFrame(step)
+      if (p < 1) frame.id = requestAnimationFrame(step)
     }
-    raf = requestAnimationFrame(step)
-    return () => cancelAnimationFrame(raf)
+    frame.id = requestAnimationFrame(step)
+    return () => cancelAnimationFrame(frame.id)
   }, [inView, reduce, value])
 
   const fmt = new Intl.NumberFormat(locale, { maximumFractionDigits: 0 })
