@@ -3,8 +3,47 @@
 Generado el 2026-11-03 a partir de `src/content/es.json` y `src/content/en.json`.
 Marca cada casilla al aprobarla. Si quieres cambiar un texto, edítalo en `src/content/en.json` (clave indicada).
 
-Total: 143 textos. Los nombres propios (AC4 Group, AMAB Tienda Virtual, Platinum/Gold/Black, Meta Ads, HubSpot) no se traducen.
+Total: 159 textos. Los nombres propios (AC4 Group, AMAB Tienda Virtual, Platinum/Gold/Black, Meta Ads, HubSpot) no se traducen.
 Los textos legales en inglés están al final de este documento.
+
+## SEO (Google y redes)
+
+- [ ] `seo.home.title`
+  - ES: AC4 Group | Agencia de Meta Ads en Bogotá – Facebook e Instagram Ads
+  - EN: AC4 Group | Meta Ads Agency in Bogotá – Facebook & Instagram Ads
+- [ ] `seo.home.description`
+  - ES: Campañas de Meta Ads para pymes, e-commerce y marcas en Bogotá. Estrategia, datos y resultados medibles. Pide tu diagnóstico gratuito por WhatsApp.
+  - EN: Meta Ads campaigns for SMBs, e-commerce and brands in Bogotá. Strategy, data and measurable results. Request your free diagnosis on WhatsApp.
+- [ ] `seo.home.ogTitle`
+  - ES: AC4 Group | Agencia de Meta Ads en Bogotá
+  - EN: AC4 Group | Meta Ads Agency in Bogotá
+- [ ] `seo.home.ogDescription`
+  - ES: Estrategia, datos y resultados medibles. Pide tu diagnóstico gratuito por WhatsApp.
+  - EN: Strategy, data and measurable results. Request your free diagnosis on WhatsApp.
+- [ ] `seo.terms.title`
+  - ES: Términos y Condiciones | AC4 Group
+  - EN: Terms and Conditions | AC4 Group
+- [ ] `seo.terms.description`
+  - ES: Términos y Condiciones de los servicios de Meta Ads de AC4 Group en Bogotá, Colombia.
+  - EN: Terms and Conditions for AC4 Group's Meta Ads services in Bogotá, Colombia.
+- [ ] `seo.privacy.title`
+  - ES: Política de Privacidad | AC4 Group
+  - EN: Privacy Policy | AC4 Group
+- [ ] `seo.privacy.description`
+  - ES: Política de Privacidad y tratamiento de datos personales de AC4 Group (Ley 1581 de 2012).
+  - EN: AC4 Group's Privacy Policy and personal data processing (Colombian Law 1581 of 2012).
+- [ ] `seo.notFound.title`
+  - ES: Página no encontrada | AC4 Group
+  - EN: Page not found | AC4 Group
+- [ ] `seo.notFound.description`
+  - ES: La página que buscas no existe.
+  - EN: The page you are looking for does not exist.
+- [ ] `seo.ogImageAlt`
+  - ES: AC4 Group — Agencia de Meta Ads en Bogotá. Estrategia · Datos · Resultados
+  - EN: AC4 Group — Meta Ads agency in Bogotá. Strategy · Data · Results
+- [ ] `seo.businessDescription`
+  - ES: Agencia de Meta Ads en Bogotá: campañas de publicidad en Facebook e Instagram para pymes, e-commerce y marcas.
+  - EN: Meta Ads agency in Bogotá: Facebook and Instagram advertising campaigns for SMBs, e-commerce and brands.
 
 ## WhatsApp
 
@@ -464,6 +503,21 @@ Los textos legales en inglés están al final de este documento.
 - [ ] `legal.updated`
   - ES: Última actualización:
   - EN: Last updated:
+
+## Página 404
+
+- [ ] `notFound.title`
+  - ES: Página no encontrada
+  - EN: Page not found
+- [ ] `notFound.text`
+  - ES: La página que buscas no existe o cambió de dirección.
+  - EN: The page you are looking for doesn't exist or has moved.
+- [ ] `notFound.home`
+  - ES: Ir al inicio
+  - EN: Go to home
+- [ ] `notFound.whatsapp`
+  - ES: Escríbenos por WhatsApp
+  - EN: Message us on WhatsApp
 
 ## Botón flotante
 
