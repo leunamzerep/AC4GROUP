@@ -1,0 +1,53 @@
+{
+  "meta": {
+    "lang": "es",
+    "htmlLang": "es-CO"
+  },
+  "whatsappMessage": "Hola AC4, quiero mi diagnóstico gratuito",
+  "nav": {
+    "label": "Principal",
+    "homeLabel": "AC4 Group — inicio",
+    "items": [
+      { "id": "servicio", "label": "Servicio" },
+      { "id": "proceso", "label": "Proceso" },
+      { "id": "paquetes", "label": "Paquetes" },
+      { "id": "caso", "label": "Caso real" },
+      { "id": "nosotros", "label": "Nosotros" },
+      { "id": "contacto", "label": "Contacto" }
+    ],
+    "cta": "Diagnóstico gratuito",
+    "ctaShort": "Diagnóstico",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú",
+    "menuLabel": "Menú",
+    "mobileNavLabel": "Menú móvil",
+    "language": "Idioma",
+    "menuCta": "Quiero mi diagnóstico gratuito"
+  },
+  "languageSwitch": {
+    "label": "Idioma / Language",
+    "es": "Español",
+    "en": "English"
+  },
+  "slogan": ["Estrategia", "Datos", "Resultados"],
+  "footer": {
+    "about": "Agencia de Meta Ads en Bogotá: publicidad en Facebook e Instagram para negocios.",
+    "navTitle": "Navegación",
+    "navLabel": "Pie de página",
+    "contactTitle": "Contacto",
+    "legalTitle": "Legal",
+    "terms": "Términos y Condiciones",
+    "privacy": "Política de Privacidad",
+    "copyright": "© 2026 AC4 Group · Bogotá, Colombia",
+    "credit": "Diseño y desarrollo:",
+    "whatsapp": "WhatsApp",
+    "email": "Correo electrónico",
+    "instagram": "Instagram",
+    "facebook": "Facebook"
+  },
+  "fab": {
+    "label": "Diagnóstico gratuito",
+    "ariaLabel": "Diagnóstico gratuito por WhatsApp"
+  },
+  "newTab": "(se abre en una pestaña nueva)"
+}

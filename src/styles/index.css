@@ -17,6 +17,7 @@
 @import "./ds/pricing.css" layer(components);
 @import "./ds/data.css" layer(components);
 @import "./ds/legal.css" layer(components);
+@import "./site.css" layer(components);
 
 /* Tokens del DS expuestos a Tailwind: bg-night-950, text-gold-500, font-display, etc.
    "inline" = Tailwind usa var(--token) del DS, así un solo lugar define cada valor. */
