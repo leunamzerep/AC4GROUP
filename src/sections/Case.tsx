@@ -1,4 +1,5 @@
 import { Fragment } from 'react'
+import { AMAB_LOGO } from '../content/images'
 import { SITE } from '../content/site'
 import { useI18n } from '../i18n'
 import Eyebrow from '../components/ui/Eyebrow'
@@ -18,10 +19,15 @@ export default function Case() {
             <div className="ac4-case__client gap-[18px]">
               <Eyebrow>{c.eyebrow}</Eyebrow>
               <div className="flex items-center gap-4">
-                {/* PENDIENTE: logo real de AMAB. Mientras tanto, iniciales. */}
-                <span className="ac4-case__logo" aria-hidden="true">
-                  {c.logoPlaceholder}
-                </span>
+                <img
+                  className="ac4-case__logo"
+                  src={AMAB_LOGO.src}
+                  width={AMAB_LOGO.width}
+                  height={AMAB_LOGO.height}
+                  alt={c.logoAlt}
+                  loading="lazy"
+                  decoding="async"
+                />
                 <h2 className="ac4-case__name">{c.client}</h2>
               </div>
               <p className="flex flex-wrap gap-x-2.5 gap-y-1 text-[15px] leading-normal text-text-secondary">

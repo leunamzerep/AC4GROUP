@@ -180,21 +180,15 @@ a.ac4-lang__opt[aria-current='page'] {
     radial-gradient(30% 30% at 22% 70%, rgba(98, 178, 231, 0.22), transparent 70%);
 }
 
-/* Logo provisional del caso (iniciales) mientras llega el logo real de AMAB. */
+/* Logo del caso (AMAB): circular, fondo negro como el logo original. */
 .ac4-case__logo {
-  display: grid;
-  place-items: center;
   width: 64px;
   height: 64px;
   flex: none;
   border-radius: 50%;
-  border: 1px solid var(--border-default);
-  background: var(--night-50);
-  color: var(--night-900);
-  font-family: var(--font-display);
-  font-size: 15px;
-  font-weight: 700;
-  letter-spacing: 0.06em;
+  border: 1px solid var(--border-gold);
+  background: var(--black);
+  object-fit: cover;
 }
 
 /* El FAB se oculta cuando un CTA queda cerca (móvil) o con el menú abierto. */
