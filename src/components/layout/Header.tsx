@@ -1,3 +1,4 @@
+import { AnimatePresence } from 'motion/react'
 import { useCallback, useEffect, useRef, useState } from 'react'
 import { whatsappUrl } from '../../content/site'
 import { pagePath, useI18n } from '../../i18n'
@@ -72,7 +73,7 @@ export default function Header({ menuOpen, onMenuChange }: Props) {
           </div>
         </div>
       </header>
-      {menuOpen && <MobileMenu onClose={closeMenu} sectionHref={sectionHref} />}
+      <AnimatePresence>{menuOpen && <MobileMenu onClose={closeMenu} sectionHref={sectionHref} />}</AnimatePresence>
     </>
   )
 }

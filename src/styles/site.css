@@ -121,7 +121,7 @@ a.ac4-lang__opt[aria-current='page'] {
   padding: 28px var(--gutter) 32px;
   touch-action: pan-y pinch-zoom;
 }
-.ac4-plans__track > .ac4-plan {
+.ac4-plans__slide {
   flex: 0 0 min(82%, 340px);
   min-width: 0;
 }
@@ -189,6 +189,65 @@ a.ac4-lang__opt[aria-current='page'] {
   border: 1px solid var(--border-gold);
   background: var(--black);
   object-fit: cover;
+}
+
+/* ── Animaciones en CSS. Las duraciones vienen de src/motion.ts (variables --dur-*). ── */
+
+/* Hero: entrada al cargar en CSS (no espera a JavaScript, mejor para el LCP).
+   Empieza en opacidad 0.01 y no en 0 para que el navegador lo cuente como pintado. */
+@keyframes ac4-hero-in {
+  from {
+    opacity: 0.01;
+    transform: translateY(var(--reveal-distance));
+  }
+}
+.ac4-hero-in > * {
+  animation: ac4-hero-in var(--dur-reveal) var(--ease-out) both;
+}
+.ac4-hero-in > :nth-child(2) { animation-delay: 100ms; }
+.ac4-hero-in > :nth-child(3) { animation-delay: 200ms; }
+.ac4-hero-in > :nth-child(4) { animation-delay: 300ms; }
+.ac4-hero-in > :nth-child(5) { animation-delay: 400ms; }
+.ac4-hero-visual {
+  animation: ac4-hero-in calc(var(--dur-reveal) * 1.25) var(--ease-out) 250ms both;
+}
+
+/* Aurora: deriva muy lenta (hero y contacto). */
+@keyframes ac4-drift {
+  0% { transform: translate3d(-6%, -3%, 0) scale(1); }
+  50% { transform: translate3d(5%, 4%, 0) scale(1.1); }
+  100% { transform: translate3d(-2%, 6%, 0) scale(1.04); }
+}
+@keyframes ac4-drift-b {
+  0% { transform: translate3d(4%, 2%, 0) scale(1.05); }
+  100% { transform: translate3d(-5%, -4%, 0) scale(0.96); }
+}
+.ac4-aurora-hero,
+.ac4-aurora-cta {
+  will-change: transform;
+  animation: ac4-drift var(--dur-aurora) ease-in-out infinite alternate;
+}
+.ac4-aurora-cta {
+  animation-name: ac4-drift-b;
+}
+
+/* Haz del proceso: recorrido lento y continuo, desfasado paso a paso. */
+.ac4-process__rail::after {
+  animation-delay: calc(var(--i, 0) * var(--beam-stagger));
+}
+
+/* Punto "en vivo" del tablero: pulso más pausado. */
+.ac4-dash__live {
+  animation-duration: var(--dur-pulse);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ac4-hero-in > *,
+  .ac4-hero-visual,
+  .ac4-aurora-hero,
+  .ac4-aurora-cta {
+    animation: none;
+  }
 }
 
 /* El FAB se oculta cuando un CTA queda cerca (móvil) o con el menú abierto. */

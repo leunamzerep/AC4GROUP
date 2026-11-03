@@ -4,13 +4,14 @@ import { SITE } from '../content/site'
 import { useI18n } from '../i18n'
 import Eyebrow from '../components/ui/Eyebrow'
 import Icon from '../components/ui/Icon'
+import NumberTicker from '../components/ui/NumberTicker'
 import Reveal from '../components/ui/Reveal'
 
 // Caso real AMAB. Siempre con el aviso de que es un resultado puntual, no una garantía.
 export default function Case() {
   const { lang, t } = useI18n()
   const c = t.case
-  const value = new Intl.NumberFormat(lang === 'es' ? 'es-CO' : 'en-US').format(c.metricValue)
+  const locale = lang === 'es' ? 'es-CO' : 'en-US'
   return (
     <section id="caso" className="ac4-section ac4-bg-night border-y border-[var(--border-subtle)]">
       <div className="ac4-container">
@@ -53,11 +54,7 @@ export default function Case() {
             <div className="ac4-case__metric gap-2.5 border-[var(--border-gold)] bg-[linear-gradient(180deg,rgba(217,169,72,.08),rgba(0,0,0,.4))]">
               <span className="text-[15px] font-bold tracking-[.14em] text-gold-300 uppercase">{c.metricPrefix}</span>
               <div className="ac4-case__value">
-                {/* PENDIENTE (fase 5): Number Ticker animado. */}
-                <span className="ac4-ticker">
-                  {c.metricCurrencySymbol}
-                  {value}
-                </span>
+                <NumberTicker value={c.metricValue} prefix={c.metricCurrencySymbol} locale={locale} />
                 <span className="ac4-case__unit">{c.metricUnit}</span>
               </div>
               <p className="ac4-case__label">{c.metricLabel}</p>

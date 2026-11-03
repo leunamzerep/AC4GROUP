@@ -5,6 +5,7 @@ import { useI18n } from '../i18n'
 import Badge from '../components/ui/Badge'
 import Button from '../components/ui/Button'
 import Icon from '../components/ui/Icon'
+import { RevealGroup, RevealItem } from '../components/ui/Reveal'
 import SectionHeader from '../components/ui/SectionHeader'
 
 const GOLD_INDEX = 1
@@ -47,13 +48,14 @@ export default function Packages() {
 
         <div>
           <div className="ac4-plans__viewport" ref={emblaRef} role="region" aria-roledescription="carousel" aria-label={p.regionLabel}>
-            <div className="ac4-plans__track">
+            <RevealGroup className="ac4-plans__track">
               {p.plans.map((plan, i) => {
                 const gold = plan.id === 'gold'
                 return (
+                  // El wrapper anima la aparición; la tarjeta conserva su transform de hover/elevación.
+                  <RevealItem key={plan.id} className="ac4-plans__slide">
                   <article
-                    key={plan.id}
-                    className={`ac4-plan ac4-plan--${plan.id}`}
+                    className={`ac4-plan ac4-plan--${plan.id} h-full`}
                     aria-roledescription={isCarousel ? 'slide' : undefined}
                     aria-label={isCarousel ? `${i + 1} / ${p.plans.length}: ${plan.name}` : undefined}
                   >
@@ -105,9 +107,10 @@ export default function Packages() {
                       )}
                     </div>
                   </article>
+                  </RevealItem>
                 )
               })}
-            </div>
+            </RevealGroup>
           </div>
 
           {isCarousel && (

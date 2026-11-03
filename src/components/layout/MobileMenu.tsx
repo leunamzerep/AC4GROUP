@@ -1,6 +1,8 @@
+import { m, useReducedMotion } from 'motion/react'
 import { useEffect, useRef } from 'react'
 import { whatsappUrl } from '../../content/site'
 import { useI18n } from '../../i18n'
+import { EASE_OUT, MOTION } from '../../motion'
 import Button from '../ui/Button'
 import Icon from '../ui/Icon'
 import Logo from '../ui/Logo'
@@ -13,6 +15,7 @@ type Props = { onClose: () => void; sectionHref: (id: string) => string }
 export default function MobileMenu({ onClose, sectionHref }: Props) {
   const { t } = useI18n()
   const ref = useRef<HTMLDivElement>(null)
+  const reduce = useReducedMotion()
 
   useEffect(() => {
     const panel = ref.current
@@ -49,13 +52,17 @@ export default function MobileMenu({ onClose, sectionHref }: Props) {
   }, [onClose])
 
   return (
-    <div
+    <m.div
       ref={ref}
       id="menu-movil"
       role="dialog"
       aria-modal="true"
       aria-label={t.nav.menuLabel}
       className="ac4-mobile-menu fixed inset-0 z-80 flex flex-col overflow-y-auto px-[clamp(12px,2vw,24px)] pt-3 pb-8"
+      initial={{ opacity: 0, y: reduce ? 0 : -12 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: reduce ? 0 : -12 }}
+      transition={{ duration: MOTION.menuDuration, ease: EASE_OUT }}
     >
       <div className="flex h-16 items-center justify-between rounded-[20px] border border-[rgba(195,202,217,.16)] bg-[rgba(14,20,52,.5)] pr-2.5 pl-5">
         <Logo variant="horizontal" height={24} />
@@ -82,6 +89,6 @@ export default function MobileMenu({ onClose, sectionHref }: Props) {
           {t.nav.menuCta}
         </Button>
       </div>
-    </div>
+    </m.div>
   )
 }

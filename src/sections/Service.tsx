@@ -2,6 +2,7 @@ import { useI18n } from '../i18n'
 import Icon from '../components/ui/Icon'
 import type { LucideName } from '../components/ui/iconData'
 import MiniBars from '../components/ui/MiniBars'
+import { RevealGroup, RevealItem } from '../components/ui/Reveal'
 import SectionHeader from '../components/ui/SectionHeader'
 
 const BARS = [30, 42, 36, 50, 47, 58, 55, 66, 61, 74, 70, 82, 78, 94]
@@ -15,9 +16,10 @@ export default function Service() {
     <section id="servicio" className="ac4-section bg-night-950">
       <div className="ac4-container flex flex-col gap-[clamp(36px,4vw,56px)]">
         <SectionHeader eyebrow={s.eyebrow} title={s.title} lead={s.lead} />
-        <div className="ac4-bento">
+        <RevealGroup className="ac4-bento">
           {/* Ojo: no usar la clase "row-2" del DS; en Tailwind v4 significa grid-row: 2. */}
-          <article className="ac4-card ac4-card--feature gap-4 md:col-span-4 md:row-span-2">
+          <RevealItem className="md:col-span-4 md:row-span-2">
+          <article className="ac4-card ac4-card--feature h-full gap-4">
             <span className="ac4-card__icon">
               <Icon name="chart-column" size={22} />
             </span>
@@ -38,16 +40,19 @@ export default function Service() {
               </div>
             </div>
           </article>
+          </RevealItem>
           {s.items.map((item) => (
-            <article key={item.title} className="ac4-card ac4-card--interactive span-2">
-              <span className="ac4-card__icon">
-                <Icon name={item.icon as LucideName} size={22} />
-              </span>
-              <h3 className="ac4-card__title">{item.title}</h3>
-              <p className="ac4-card__body">{item.body}</p>
-            </article>
+            <RevealItem key={item.title} className="md:col-span-2">
+              <article className="ac4-card ac4-card--interactive h-full">
+                <span className="ac4-card__icon">
+                  <Icon name={item.icon as LucideName} size={22} />
+                </span>
+                <h3 className="ac4-card__title">{item.title}</h3>
+                <p className="ac4-card__body">{item.body}</p>
+              </article>
+            </RevealItem>
           ))}
-        </div>
+        </RevealGroup>
       </div>
     </section>
   )

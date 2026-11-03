@@ -6,7 +6,6 @@ import Button from '../components/ui/Button'
 import Eyebrow from '../components/ui/Eyebrow'
 import Icon from '../components/ui/Icon'
 import MiniBars from '../components/ui/MiniBars'
-import Reveal from '../components/ui/Reveal'
 
 const BARS = [34, 46, 40, 58, 52, 68, 62, 76, 72, 90]
 
@@ -20,8 +19,9 @@ export default function Hero() {
       <div aria-hidden="true" className="ac4-texture-grid ac4-hero-grid absolute inset-0 -z-20" />
 
       <div className="ac4-container grid items-center gap-[clamp(40px,5vw,64px)] [grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr))]">
-        <Reveal>
-          <div className="flex flex-col items-start gap-6">
+        {/* Entrada en CSS (ver .ac4-hero-in en site.css): el hero no espera a JavaScript. */}
+        <div>
+          <div className="ac4-hero-in flex flex-col items-start gap-6">
             <Eyebrow>{h.eyebrow}</Eyebrow>
             <h1 className="max-w-[14ch] text-[clamp(2.6rem,1.4rem+4.4vw,4.75rem)] leading-[1.02] tracking-[-0.005em]">
               {h.titleBefore} <span className="ac4-text-gold-gradient">{h.titleHighlight}</span>
@@ -49,10 +49,10 @@ export default function Hero() {
               ))}
             </ul>
           </div>
-        </Reveal>
+        </div>
 
         {/* Visual decorativo: onda de marca + tablero ilustrativo (cifras de ejemplo, no de clientes). */}
-        <div aria-hidden="true" className="relative aspect-square w-full max-w-[560px] justify-self-center">
+        <div aria-hidden="true" className="ac4-hero-visual relative aspect-square w-full max-w-[560px] justify-self-center">
           <img
             src={WAVE.src}
             srcSet={WAVE.srcSet}
