@@ -1,5 +1,18 @@
 /* Estilos propios del sitio que no están en el design system (tomados del diseño de la landing). */
 
+/* Espacio vertical entre secciones: 20 % menos que el design system (era clamp(72px, 8vw + 32px, 144px)). */
+:root {
+  --section-y: clamp(58px, 6.4vw + 26px, 115px);
+}
+
+/* Proceso (desktop): los pasos se alinean arriba. Sin esto, los pasos con menos texto
+   estiraban la fila del ícono y su título quedaba más abajo que el de los demás. */
+@media (min-width: 1024px) {
+  .ac4-process__step {
+    align-content: start;
+  }
+}
+
 /* Header flotante con liquid glass: el único lugar con backdrop-filter fuerte. */
 .ac4-header-glass {
   background: linear-gradient(180deg, rgba(14, 20, 52, 0.62), rgba(5, 8, 27, 0.52));
