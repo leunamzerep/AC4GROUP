@@ -52,6 +52,11 @@ componente en `src/pages/`.
 
 ## Despliegue
 
-El sitio se publica desde la carpeta `dist/` en GitHub Pages (repositorio `AC4GROUP`, mayúsculas incluidas).
-La base `'/AC4GROUP/'` está en `vite.config.ts`.
-PENDIENTE (fase 10): workflow de GitHub Actions para compilar y publicar automáticamente al hacer push a `main`.
+El sitio se publica solo con GitHub Actions (`.github/workflows/deploy.yml`) cada vez que se hace push a `main`
+(también se puede lanzar a mano en la pestaña Actions → "Run workflow"). El workflow instala con `npm ci`,
+corre `npm run lint` y `npm run build`, y publica `dist/`.
+
+Primera vez (una sola vez, en GitHub): crear el repositorio `AC4GROUP` (mayúsculas incluidas) y, en
+Settings → Pages → Source, elegir **GitHub Actions**. La base `'/AC4GROUP/'` está en `vite.config.ts`;
+si cambia el nombre del repo o el dominio, hay que actualizarla y también `SITE.url` en `src/content/site.ts`
+y `SITE_URL` en `scripts/prerender.mjs`.
