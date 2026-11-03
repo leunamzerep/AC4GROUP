@@ -181,6 +181,15 @@
     "instagram": "Instagram",
     "facebook": "Facebook"
   },
+  "legal": {
+    "eyebrow": "Legal",
+    "terms": "Términos y Condiciones",
+    "privacy": "Política de Privacidad",
+    "tocLabel": "Contenido",
+    "back": "Volver al inicio",
+    "backShort": "Inicio",
+    "updated": "Última actualización:"
+  },
   "fab": {
     "label": "Diagnóstico gratuito",
     "ariaLabel": "Diagnóstico gratuito por WhatsApp"

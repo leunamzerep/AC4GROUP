@@ -1,16 +1,17 @@
-<!-- FUENTE: texto entregado por Manuel el 2026-11-03. Copia literal; los marcadores [ ] se resuelven en la fase 7. -->
+<!-- FUENTE: texto entregado por Manuel el 2026-11-03, con los datos y decisiones confirmados en la fase 7.
+     Facebook se quitó de los canales de contacto hasta que exista la página. -->
+<!-- META: updated=3 de noviembre de 2026 | note=Conforme a la Ley 1581 de 2012 -->
+
 
 # Política de Privacidad — AC4 Group
-
-Última actualización: 3 de noviembre de 2026
 
 ## 1. Responsable del tratamiento
 
 AC4 Group es una marca que opera bajo persona natural, con domicilio en Bogotá, Colombia. Es responsable del tratamiento de los datos personales que recibe a través de este sitio y de sus canales de contacto, conforme a la Ley 1581 de 2012 y el Decreto 1377 de 2013.
 
-- Responsable: [NOMBRE COMPLETO DE ANDRÉS CORREAL]
-- Identificación: [CÉDULA / NIT]
-- Dirección de notificaciones: [DIRECCIÓN], Bogotá
+- Responsable: Andrés Felipe Correal Hernández
+- Identificación: C.C. 1031174405
+- Dirección de notificaciones: Cl 46a Sur #23B-42, Bogotá
 - Correo: [andrescorreal2803@gmail.com](mailto:andrescorreal2803@gmail.com)
 - WhatsApp: +57 310 799 3836
 
@@ -18,7 +19,7 @@ AC4 Group es una marca que opera bajo persona natural, con domicilio en Bogotá,
 
 Este sitio no tiene formularios ni te pide registrarte. Solo recibimos datos cuando decides escribirnos:
 
-- Por WhatsApp, correo, Instagram o Facebook: tu nombre, tu número o usuario, tu correo y la información que nos cuentes sobre tu negocio.
+- Por WhatsApp, correo o Instagram: tu nombre, tu número o usuario, tu correo y la información que nos cuentes sobre tu negocio.
 - Si contratas nuestros servicios:
   - los datos de contacto y facturación necesarios para la relación comercial;
   - el acceso que nos otorgues a tus cuentas comerciales de Meta (Meta Business Suite, cuentas publicitarias, páginas y perfiles);
@@ -54,7 +55,7 @@ No compartimos las métricas ni la información de tu negocio con terceros. Solo
 ## 6. Servicios de terceros
 
 - GitHub Pages: aloja este sitio web.
-- WhatsApp, Instagram y Facebook (Meta): si nos contactas por estos medios o usas sus enlaces, aplican sus propias políticas de privacidad.
+- WhatsApp e Instagram (Meta): si nos contactas por estos medios o usas sus enlaces, aplican sus propias políticas de privacidad.
 - Gmail (Google): recibe los correos que nos envías.
 
 Algunos de estos proveedores procesan datos en servidores fuera de Colombia, por ejemplo en Estados Unidos. Al contactarnos por estos medios, autorizas de forma expresa esa transferencia.

@@ -3,7 +3,7 @@
 Generado el 2026-11-03 a partir de `src/content/es.json` y `src/content/en.json`.
 Marca cada casilla al aprobarla. Si quieres cambiar un texto, edítalo en `src/content/en.json` (clave indicada).
 
-Total: 137 textos. Los nombres propios (AC4 Group, AMAB Tienda Virtual, Platinum/Gold/Black, Meta Ads, HubSpot) no se traducen.
+Total: 143 textos. Los nombres propios (AC4 Group, AMAB Tienda Virtual, Platinum/Gold/Black, Meta Ads, HubSpot) no se traducen.
 Los textos legales en inglés se listarán aparte en la fase 7.
 
 ## WhatsApp
@@ -444,6 +444,27 @@ Los textos legales en inglés se listarán aparte en la fase 7.
   - ES: Correo electrónico
   - EN: Email
 
+## Páginas legales (interfaz)
+
+- [ ] `legal.terms`
+  - ES: Términos y Condiciones
+  - EN: Terms and Conditions
+- [ ] `legal.privacy`
+  - ES: Política de Privacidad
+  - EN: Privacy Policy
+- [ ] `legal.tocLabel`
+  - ES: Contenido
+  - EN: Contents
+- [ ] `legal.back`
+  - ES: Volver al inicio
+  - EN: Back to home
+- [ ] `legal.backShort`
+  - ES: Inicio
+  - EN: Home
+- [ ] `legal.updated`
+  - ES: Última actualización:
+  - EN: Last updated:
+
 ## Botón flotante
 
 - [ ] `fab.label`
@@ -458,3 +479,17 @@ Los textos legales en inglés se listarán aparte en la fase 7.
 - [ ] `newTab`
   - ES: (se abre en una pestaña nueva)
   - EN: (opens in a new tab)
+
+## Textos legales completos (EN)
+
+Traducidos por Claude a partir de los textos en español ya completados con tus datos. Revísalos completos:
+
+- [ ] `src/content/legal/en/terms.md` ← traducción de `src/content/legal/es/terminos.md` (17 secciones)
+- [ ] `src/content/legal/en/privacy.md` ← traducción de `src/content/legal/es/privacidad.md` (12 secciones)
+
+Decisiones de traducción a revisar:
+- "mes vencido" → "in arrears (at the end of each month)".
+- "Llave Bre-B" → "a Bre-B key"; "TRM" → "official exchange rate (TRM)".
+- "Ley 1581 de 2012" → "Law 1581 of 2012"; "Superintendencia de Industria y Comercio" → "Superintendence of Industry and Commerce".
+- "obligación de medio, no de resultado" → "obligation of means, not of results".
+- "derecho de retracto" → "right of withdrawal".

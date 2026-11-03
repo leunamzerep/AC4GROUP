@@ -1,8 +1,8 @@
-<!-- FUENTE: texto entregado por Manuel el 2026-11-03. Copia literal; los marcadores [ ] se resuelven en la fase 7. -->
+<!-- FUENTE: texto entregado por Manuel el 2026-11-03, con los datos y decisiones confirmados en la fase 7. -->
+<!-- META: updated=3 de noviembre de 2026 -->
+
 
 # Términos y Condiciones — AC4 Group
-
-Última actualización: 3 de noviembre de 2026
 
 ## 1. Introducción
 
@@ -16,9 +16,9 @@ Las condiciones específicas de cada servicio quedan en el acuerdo escrito entre
 
 AC4 Group es una marca que opera bajo persona natural y presta sus servicios de forma remota desde Bogotá, Colombia.
 
-- Nombre: [NOMBRE COMPLETO]
-- Identificación: [CÉDULA / NIT]
-- Dirección de notificaciones: [DIRECCIÓN], Bogotá
+- Nombre: Andrés Felipe Correal Hernández
+- Identificación: C.C. 1031174405
+- Dirección de notificaciones: Cl 46a Sur #23B-42, Bogotá
 - Correo: [andrescorreal2803@gmail.com](mailto:andrescorreal2803@gmail.com)
 - WhatsApp: +57 310 799 3836
 
@@ -38,8 +38,8 @@ El diagnóstico inicial no tiene costo y no te obliga a contratar. Sirve para co
 
 - Los precios publicados (“desde”) están en dólares estadounidenses (USD), son mensuales y tienen carácter de referencia.
 - El valor final se define según los objetivos de tu negocio y se te informa por escrito antes de que lo aceptes.
-- Forma de pago: [MES ANTICIPADO / VENCIDO], mediante [MEDIOS DE PAGO]. [Si se paga en pesos colombianos, se usa la TRM del día del pago.]
-- Si hay mora superior a [X] días calendario, podemos pausar la gestión de las campañas hasta que se normalice el pago.
+- Forma de pago: mes vencido, mediante transferencia con Llave Bre-B. Si se paga en pesos colombianos, se usa la TRM del día del pago.
+- Si hay mora superior a cinco (5) días calendario, podemos pausar la gestión de las campañas hasta que se normalice el pago.
 
 ## 6. Inversión publicitaria (pauta)
 
@@ -81,9 +81,9 @@ No somos responsables por suspensiones, restricciones o rechazos de anuncios o c
 
 ## 10. Duración, cancelación y devoluciones
 
-- Sin permanencia mínima. Puedes cancelar el servicio en cualquier momento con aviso escrito (WhatsApp o correo). [La cancelación aplica al finalizar el mes en curso y el valor de ese mes no se reembolsa.]
-- Derecho de retracto. Si contratas a distancia como consumidor en los términos de la Ley 1480 de 2011, puedes retractarte dentro de los cinco (5) días hábiles siguientes a la contratación, siempre que la prestación del servicio no haya comenzado con tu acuerdo. En ese caso te devolvemos lo pagado en un máximo de treinta (30) días calendario. Una vez inicia el servicio con tu acuerdo, el retracto deja de aplicar, como lo prevé la ley.
-- Incumplimiento nuestro. Si no prestamos total o parcialmente el servicio pagado, te devolvemos lo correspondiente a la parte no prestada.
+- Sin permanencia mínima. Puedes cancelar el servicio en cualquier momento con aviso escrito (WhatsApp o correo). Al cancelar, pagas el servicio prestado hasta la fecha de cancelación.
+- Derecho de retracto. Si contratas a distancia como consumidor en los términos de la Ley 1480 de 2011, puedes retractarte dentro de los cinco (5) días hábiles siguientes a la contratación, siempre que la prestación del servicio no haya comenzado con tu acuerdo. En ese caso no te cobramos el servicio y, si ya hiciste algún pago, te lo devolvemos en un máximo de treinta (30) días calendario. Una vez inicia el servicio con tu acuerdo, el retracto deja de aplicar, como lo prevé la ley.
+- Incumplimiento nuestro. Si no prestamos total o parcialmente el servicio, no te cobramos la parte no prestada y, si ya la pagaste, te la devolvemos.
 - La inversión en pauta pagada a Meta no es reembolsable por AC4 Group, porque se paga directamente a esa plataforma.
 
 ## 11. Confidencialidad
