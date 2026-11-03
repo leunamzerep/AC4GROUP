@@ -1,0 +1,189 @@
+{
+  "meta": {
+    "lang": "en",
+    "htmlLang": "en"
+  },
+  "whatsappMessage": "Hi AC4, I'd like my free diagnosis",
+  "nav": {
+    "label": "Main",
+    "homeLabel": "AC4 Group — home",
+    "items": [
+      { "id": "servicio", "label": "Service" },
+      { "id": "proceso", "label": "Process" },
+      { "id": "paquetes", "label": "Packages" },
+      { "id": "caso", "label": "Case study" },
+      { "id": "nosotros", "label": "About" },
+      { "id": "contacto", "label": "Contact" }
+    ],
+    "cta": "Free diagnosis",
+    "ctaShort": "Diagnosis",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "menuLabel": "Menu",
+    "mobileNavLabel": "Mobile menu",
+    "language": "Language",
+    "menuCta": "Get my free diagnosis"
+  },
+  "languageSwitch": {
+    "label": "Idioma / Language",
+    "es": "Español",
+    "en": "English"
+  },
+  "slogan": ["Strategy", "Data", "Results"],
+  "hero": {
+    "eyebrow": "Digital marketing & applied analytics · Bogotá",
+    "titleBefore": "Facebook and Instagram advertising measured in",
+    "titleHighlight": "results",
+    "lead": "We create, launch and optimize your Meta Ads campaigns with real metrics, so every dollar you invest works for your business.",
+    "ctaPrimary": "Get my free diagnosis",
+    "ctaSecondary": "See packages",
+    "checks": ["No minimum commitment", "Replies via WhatsApp"],
+    "dashboard": {
+      "title": "Campaign · 14 days",
+      "badge": "Illustrative",
+      "kpis": [
+        { "label": "Reach", "value": "48.2K" },
+        { "label": "CTR", "value": "1.8%", "gold": true },
+        { "label": "CPC", "value": "$0.22" },
+        { "label": "CPM", "value": "$4.10" }
+      ]
+    }
+  },
+  "service": {
+    "eyebrow": "Service",
+    "title": "Meta Ads from start to finish",
+    "lead": "We handle the full lifecycle of your Facebook and Instagram campaigns.",
+    "feature": {
+      "title": "Applied analytics",
+      "body": "We read what your campaigns are telling you: reach, impressions, frequency, CPM, amount spent, CTR and CPC (all clicks and link clicks). We make decisions based on that data, not on guesswork.",
+      "chartTitle": "Results per day",
+      "chartBadge": "Illustrative",
+      "metrics": ["Reach", "Impressions", "Frequency", "CPM", "Spend", "CTR", "CPC"]
+    },
+    "items": [
+      { "icon": "rocket", "title": "Campaign creation and launch", "body": "We set up and publish your ads with the right objective for your business." },
+      { "icon": "briefcase", "title": "Unified business portfolio", "body": "We organize your accounts in Meta Business Suite so everything runs from one place." },
+      { "icon": "clapperboard", "title": "Creative review", "body": "We check your photos and videos before you invest in them." },
+      { "icon": "sliders-horizontal", "title": "Monitoring and optimization", "body": "We fix what isn't working and boost what is." },
+      { "icon": "file-chart-column", "title": "Clear reports", "body": "We keep you informed with easy-to-understand results whenever there are decisions to make." }
+    ]
+  },
+  "process": {
+    "eyebrow": "Process",
+    "title": "How we work",
+    "steps": [
+      { "icon": "search", "title": "Diagnosis", "body": "We analyze your business, your goals and your current social media presence." },
+      { "icon": "compass", "title": "Strategy", "body": "We define the audience, campaign objective and budget." },
+      { "icon": "settings-2", "title": "Setup", "body": "We organize your business portfolio and review your creatives." },
+      { "icon": "rocket", "title": "Launch", "body": "We publish your campaigns and test them on a responsible budget." },
+      { "icon": "activity", "title": "Monitoring", "body": "We track key metrics day by day." },
+      { "icon": "sliders-horizontal", "title": "Optimization", "body": "We adjust targeting, creatives and budget based on the data." },
+      { "icon": "file-chart-column", "title": "Report", "body": "We show you clear results and the next steps." }
+    ]
+  },
+  "packages": {
+    "eyebrow": "Packages",
+    "title": "Packages tailored to your business",
+    "lead": "Choose a starting point. We'll set the final price together after your free diagnosis.",
+    "regionLabel": "Packages",
+    "dotsLabel": "Choose a package",
+    "from": "From",
+    "perMonth": "USD / month",
+    "recommended": "Recommended",
+    "plans": [
+      {
+        "id": "platinum",
+        "name": "Platinum",
+        "price": 100,
+        "features": ["Initial diagnosis", "Business portfolio setup", "Review of photos and videos", "Campaign creation, setup and launch"],
+        "cta": "Start with Platinum"
+      },
+      {
+        "id": "gold",
+        "name": "Gold",
+        "price": 200,
+        "includesPrevious": "Everything in Platinum",
+        "features": ["Ongoing campaign monitoring and optimization"],
+        "cta": "Start with Gold"
+      },
+      {
+        "id": "black",
+        "name": "Black",
+        "price": 400,
+        "includesPrevious": "Everything in Gold",
+        "features": ["Professional website creation", "Pixel installation", "Website maintenance and updates"],
+        "cta": "Start with Black"
+      }
+    ],
+    "notes": [
+      "Estimated monthly prices; the exact price depends on your business goals.",
+      "Ad spend is not included.",
+      "Recommended starting daily budget: 4–5 USD per campaign.",
+      "No minimum commitment."
+    ]
+  },
+  "case": {
+    "eyebrow": "Case study",
+    "client": "AMAB Tienda Virtual",
+    "logoAlt": "AMAB Tienda Virtual logo",
+    "tags": ["Online store for clothing and jumpsuits", "WhatsApp message campaigns", "2026"],
+    "instagram": "See their Instagram",
+    "metricPrefix": "Less than",
+    "metricValue": 1000,
+    "metricCurrencySymbol": "$",
+    "metricUnit": "COP",
+    "metricLabel": "per conversation started on WhatsApp",
+    "disclaimer": "Result from a specific case. Every business and every campaign is different."
+  },
+  "why": {
+    "eyebrow": "Why AC4",
+    "title": "Why choose AC4 Group",
+    "items": [
+      { "icon": "target", "title": "Strategy with purpose", "body": "Every campaign starts from a clear business goal.", "wide": true },
+      { "icon": "chart-column", "title": "Data-driven decisions", "body": "We optimize with metrics, not intuition." },
+      { "icon": "eye", "title": "Measurable results", "body": "You'll know exactly what's happening with your investment." },
+      { "icon": "trending-up", "title": "Sustainable growth", "body": "We start with a responsible budget and scale what works.", "wide": true }
+    ],
+    "badges": [
+      { "variant": "blue", "icon": "award", "label": "Digital marketing certification · HubSpot" },
+      { "variant": "gold-outline", "icon": "search", "label": "Free diagnosis" },
+      { "variant": "neutral", "icon": "calendar-x", "label": "No commitment" }
+    ]
+  },
+  "about": {
+    "eyebrow": "About",
+    "titleLine1": "AC4",
+    "titleLine2": "Andrés Correal.",
+    "body": "AC4 Group was born from a simple idea: any business should be able to access good digital marketing and reach more people. Backed by a HubSpot certification in digital marketing, we run every campaign with dedication, transparency and data.",
+    "location": "Bogotá · 100% remote"
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Start with a free diagnosis",
+    "text": "Tell us about your business and we'll tell you which package and budget make sense for you.",
+    "whatsapp": "Message us on WhatsApp",
+    "email": "Send an email",
+    "instagram": "Instagram",
+    "facebook": "Facebook"
+  },
+  "footer": {
+    "about": "Meta Ads agency in Bogotá: Facebook and Instagram advertising for businesses.",
+    "navTitle": "Navigation",
+    "navLabel": "Footer",
+    "contactTitle": "Contact",
+    "legalTitle": "Legal",
+    "terms": "Terms and Conditions",
+    "privacy": "Privacy Policy",
+    "copyright": "© 2026 AC4 Group · Bogotá, Colombia",
+    "credit": "Design and development:",
+    "whatsapp": "WhatsApp",
+    "email": "Email",
+    "instagram": "Instagram",
+    "facebook": "Facebook"
+  },
+  "fab": {
+    "label": "Free diagnosis",
+    "ariaLabel": "Free diagnosis via WhatsApp"
+  },
+  "newTab": "(opens in a new tab)"
+}
