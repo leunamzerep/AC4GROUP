@@ -77,6 +77,126 @@ a.ac4-lang__opt[aria-current='page'] {
   color: var(--text-secondary);
 }
 
+/* Hero: aurora (azul + toque dorado), grilla con máscara, onda y tablero ilustrativo. */
+.ac4-aurora-hero {
+  background:
+    radial-gradient(55% 50% at 62% 18%, rgba(35, 119, 227, 0.4), rgba(0, 45, 123, 0.16) 50%, transparent 75%),
+    radial-gradient(26% 26% at 86% 14%, rgba(217, 169, 72, 0.14), transparent 70%),
+    radial-gradient(38% 40% at 12% 40%, rgba(98, 178, 231, 0.14), transparent 70%);
+}
+.ac4-hero-grid {
+  -webkit-mask-image: radial-gradient(60% 55% at 30% 35%, #000, transparent);
+  mask-image: radial-gradient(60% 55% at 30% 35%, #000, transparent);
+}
+.ac4-hero-wave {
+  object-position: 62% 50%;
+  -webkit-mask-image: radial-gradient(58% 54% at 50% 50%, #000 45%, transparent 100%);
+  mask-image: radial-gradient(58% 54% at 50% 50%, #000 45%, transparent 100%);
+}
+/* Vidrio moderado (blur 8px) sobre la onda; el liquid glass fuerte queda solo en el header. */
+.ac4-hero-dash {
+  background: rgba(10, 14, 38, 0.66);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(195, 202, 217, 0.18);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.12),
+    0 30px 60px -24px rgba(0, 0, 0, 0.85),
+    0 0 0 1px rgba(62, 150, 226, 0.12);
+}
+/* Tarjetas de precio sobre fondo oscuro sólido: el blur no aporta, se quita por rendimiento. */
+.ac4-plan {
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+}
+
+/* Paquetes: carrusel (Embla) por debajo de 1024px, 3 columnas desde 1024px. */
+.ac4-plans__viewport {
+  overflow: hidden;
+  margin-inline: calc(var(--gutter) * -1);
+}
+.ac4-plans__track {
+  display: flex;
+  gap: 20px;
+  padding: 28px var(--gutter) 32px;
+  touch-action: pan-y pinch-zoom;
+}
+.ac4-plans__track > .ac4-plan {
+  flex: 0 0 min(82%, 340px);
+  min-width: 0;
+}
+@media (min-width: 1024px) {
+  .ac4-plans__viewport {
+    overflow: visible;
+    margin-inline: 0;
+  }
+  .ac4-plans__track {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    padding: 28px 0 32px;
+    transform: none !important;
+  }
+}
+.ac4-plans__dot {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+.ac4-plans__dot span {
+  display: block;
+  height: 8px;
+  width: 8px;
+  border-radius: 999px;
+  background: var(--night-500);
+  transition:
+    width var(--dur-base) var(--ease-out),
+    background-color var(--dur-base);
+}
+.ac4-plans__dot[aria-current='true'] span {
+  width: 28px;
+  background: var(--night-50);
+}
+.ac4-plans__dot[aria-current='true'].is-gold span {
+  background: var(--gold-500);
+}
+
+/* Nosotros: onda girada y enmascarada. */
+.ac4-about-wave {
+  object-position: 30% 50%;
+  transform: scale(1.25) rotate(-8deg);
+  -webkit-mask-image: radial-gradient(70% 70% at 50% 50%, #000 40%, transparent);
+  mask-image: radial-gradient(70% 70% at 50% 50%, #000 40%, transparent);
+}
+
+/* Contacto: aurora del CTA final. */
+.ac4-aurora-cta {
+  background:
+    radial-gradient(45% 45% at 50% 30%, rgba(35, 119, 227, 0.55), rgba(0, 45, 123, 0.25) 50%, transparent 72%),
+    radial-gradient(28% 28% at 72% 22%, rgba(217, 169, 72, 0.26), transparent 70%),
+    radial-gradient(30% 30% at 22% 70%, rgba(98, 178, 231, 0.22), transparent 70%);
+}
+
+/* Logo provisional del caso (iniciales) mientras llega el logo real de AMAB. */
+.ac4-case__logo {
+  display: grid;
+  place-items: center;
+  width: 64px;
+  height: 64px;
+  flex: none;
+  border-radius: 50%;
+  border: 1px solid var(--border-default);
+  background: var(--night-50);
+  color: var(--night-900);
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+
 /* El FAB se oculta cuando un CTA queda cerca (móvil) o con el menú abierto. */
 .ac4-fab {
   transition:

@@ -30,6 +30,143 @@
     "en": "English"
   },
   "slogan": ["Estrategia", "Datos", "Resultados"],
+  "hero": {
+    "eyebrow": "Marketing digital y analítica aplicada · Bogotá",
+    "titleBefore": "Publicidad en Facebook e Instagram que se mide en",
+    "titleHighlight": "resultados",
+    "lead": "Creamos, lanzamos y optimizamos tus campañas de Meta Ads con métricas reales, para que cada inversión trabaje por tu negocio.",
+    "ctaPrimary": "Quiero mi diagnóstico gratuito",
+    "ctaSecondary": "Ver paquetes",
+    "checks": ["Sin permanencia mínima", "Respuesta por WhatsApp"],
+    "dashboard": {
+      "title": "Campaña · 14 días",
+      "badge": "Ilustrativo",
+      "kpis": [
+        { "label": "Alcance", "value": "48,2 K" },
+        { "label": "CTR", "value": "1,8%", "gold": true },
+        { "label": "CPC", "value": "$0,22" },
+        { "label": "CPM", "value": "$4,10" }
+      ]
+    }
+  },
+  "service": {
+    "eyebrow": "Servicio",
+    "title": "Meta Ads de principio a fin",
+    "lead": "Nos encargamos de todo el ciclo de tus campañas en Facebook e Instagram.",
+    "feature": {
+      "title": "Analítica aplicada",
+      "body": "Leemos lo que tus campañas dicen: alcance, impresiones, frecuencia, CPM, importe, CTR y CPC (de todos y de enlace). Con esos datos decidimos, no con suposiciones.",
+      "chartTitle": "Resultados por día",
+      "chartBadge": "Ilustrativo",
+      "metrics": ["Alcance", "Impresiones", "Frecuencia", "CPM", "Importe", "CTR", "CPC"]
+    },
+    "items": [
+      { "icon": "rocket", "title": "Creación y lanzamiento de campañas", "body": "Configuramos y publicamos tu pauta con el objetivo correcto para tu negocio." },
+      { "icon": "briefcase", "title": "Portafolio comercial unificado", "body": "Organizamos tus redes en Meta Business Suite para que todo funcione desde un solo lugar." },
+      { "icon": "clapperboard", "title": "Verificación de creativos", "body": "Revisamos tus fotos y videos antes de invertir en ellos." },
+      { "icon": "sliders-horizontal", "title": "Monitoreo y optimización", "body": "Ajustamos lo que no funciona y potenciamos lo que sí." },
+      { "icon": "file-chart-column", "title": "Reportes claros", "body": "Te mantenemos informado con resultados entendibles cada vez que haya decisiones que tomar." }
+    ]
+  },
+  "process": {
+    "eyebrow": "Proceso",
+    "title": "Cómo trabajamos",
+    "steps": [
+      { "icon": "search", "title": "Diagnóstico", "body": "Analizamos tu negocio, tus objetivos y tu presencia actual en redes." },
+      { "icon": "compass", "title": "Estrategia", "body": "Definimos público, objetivo de campaña y presupuesto." },
+      { "icon": "settings-2", "title": "Configuración", "body": "Organizamos tu portafolio comercial y revisamos tus creativos." },
+      { "icon": "rocket", "title": "Lanzamiento", "body": "Publicamos tus campañas y testeamos con presupuesto responsable." },
+      { "icon": "activity", "title": "Monitoreo", "body": "Seguimos las métricas clave día a día." },
+      { "icon": "sliders-horizontal", "title": "Optimización", "body": "Ajustamos segmentación, creativos y presupuesto según los datos." },
+      { "icon": "file-chart-column", "title": "Reporte", "body": "Te mostramos resultados claros y los próximos pasos." }
+    ]
+  },
+  "packages": {
+    "eyebrow": "Paquetes",
+    "title": "Paquetes a la medida de tu negocio",
+    "lead": "Elige un punto de partida. El valor final lo definimos juntos después de tu diagnóstico gratuito.",
+    "regionLabel": "Paquetes",
+    "dotsLabel": "Elegir paquete",
+    "from": "Desde",
+    "perMonth": "USD / mes",
+    "recommended": "Recomendado",
+    "plans": [
+      {
+        "id": "platinum",
+        "name": "Platinum",
+        "price": 100,
+        "features": ["Diagnóstico inicial", "Configuración de portafolio comercial", "Verificación de material audiovisual", "Creación, configuración y lanzamiento de campañas"],
+        "cta": "Empezar con Platinum"
+      },
+      {
+        "id": "gold",
+        "name": "Gold",
+        "price": 200,
+        "includesPrevious": "Todo lo de Platinum",
+        "features": ["Monitoreo y optimización continua de campañas"],
+        "cta": "Empezar con Gold"
+      },
+      {
+        "id": "black",
+        "name": "Black",
+        "price": 400,
+        "includesPrevious": "Todo lo de Gold",
+        "features": ["Creación de página web profesional", "Instalación de píxel", "Mantenimiento y actualización de página"],
+        "cta": "Empezar con Black"
+      }
+    ],
+    "notes": [
+      "Valores estimados mensuales; el precio exacto depende de los objetivos de tu negocio.",
+      "La inversión en pauta publicitaria no está incluida.",
+      "Presupuesto diario inicial recomendado: 4–5 USD por campaña.",
+      "Sin permanencia mínima."
+    ]
+  },
+  "case": {
+    "eyebrow": "Caso real",
+    "client": "AMAB Tienda Virtual",
+    "logoAlt": "Logo de AMAB Tienda Virtual",
+    "logoPlaceholder": "AMAB",
+    "tags": ["Tienda virtual de ropa y enterizos", "Campañas de mensajes a WhatsApp", "2026"],
+    "instagram": "Ver su Instagram",
+    "metricPrefix": "Menos de",
+    "metricValue": 1000,
+    "metricCurrencySymbol": "$",
+    "metricUnit": "COP",
+    "metricLabel": "por cada chat iniciado en WhatsApp",
+    "disclaimer": "Resultado de un caso específico. Cada negocio y cada campaña son diferentes."
+  },
+  "why": {
+    "eyebrow": "Por qué AC4",
+    "title": "Por qué elegir AC4 Group",
+    "items": [
+      { "icon": "target", "title": "Estrategia con propósito", "body": "Cada campaña parte de un objetivo claro de tu negocio.", "wide": true },
+      { "icon": "chart-column", "title": "Decisiones basadas en datos", "body": "Optimizamos con métricas, no con intuición." },
+      { "icon": "eye", "title": "Resultados medibles", "body": "Sabrás exactamente qué está pasando con tu inversión." },
+      { "icon": "trending-up", "title": "Crecimiento sostenible", "body": "Empezamos con presupuesto responsable y escalamos lo que funciona.", "wide": true }
+    ],
+    "badges": [
+      { "variant": "blue", "icon": "award", "label": "Certificación en marketing digital · HubSpot" },
+      { "variant": "gold-outline", "icon": "search", "label": "Diagnóstico gratuito" },
+      { "variant": "neutral", "icon": "calendar-x", "label": "Sin permanencia" }
+    ]
+  },
+  "about": {
+    "eyebrow": "Nosotros",
+    "titleLine1": "AC4",
+    "titleLine2": "Andrés Correal.",
+    "body": "AC4 Group nace con una idea simple: que cualquier negocio pueda acceder a buen marketing digital y llegar a más personas. Con formación certificada en marketing digital por HubSpot, trabajamos cada campaña con dedicación, transparencia y datos.",
+    "location": "Bogotá · 100% remoto"
+  },
+  "contact": {
+    "eyebrow": "Contacto",
+    "title": "Empieza con un diagnóstico gratuito",
+    "text": "Cuéntanos sobre tu negocio y te diremos qué paquete y qué presupuesto tienen sentido para ti.",
+    "whatsapp": "Escríbenos por WhatsApp",
+    "email": "Enviar correo",
+    "instagram": "Instagram",
+    "facebook": "Facebook"
+  },
   "footer": {
     "about": "Agencia de Meta Ads en Bogotá: publicidad en Facebook e Instagram para negocios.",
     "navTitle": "Navegación",
