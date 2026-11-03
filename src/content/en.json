@@ -3,6 +3,29 @@
     "lang": "en",
     "htmlLang": "en"
   },
+  "seo": {
+    "home": {
+      "title": "AC4 Group | Meta Ads Agency in Bogotá – Facebook & Instagram Ads",
+      "description": "Meta Ads campaigns for SMBs, e-commerce and brands in Bogotá. Strategy, data and measurable results. Request your free diagnosis on WhatsApp.",
+      "ogTitle": "AC4 Group | Meta Ads Agency in Bogotá",
+      "ogDescription": "Strategy, data and measurable results. Request your free diagnosis on WhatsApp."
+    },
+    "terms": {
+      "title": "Terms and Conditions | AC4 Group",
+      "description": "Terms and Conditions for AC4 Group's Meta Ads services in Bogotá, Colombia."
+    },
+    "privacy": {
+      "title": "Privacy Policy | AC4 Group",
+      "description": "AC4 Group's Privacy Policy and personal data processing (Colombian Law 1581 of 2012)."
+    },
+    "notFound": {
+      "title": "Page not found | AC4 Group",
+      "description": "The page you are looking for does not exist."
+    },
+    "ogImageAlt": "AC4 Group — Meta Ads agency in Bogotá. Strategy · Data · Results",
+    "ogLocale": "en_US",
+    "businessDescription": "Meta Ads agency in Bogotá: Facebook and Instagram advertising campaigns for SMBs, e-commerce and brands."
+  },
   "whatsappMessage": "Hi AC4, I'd like my free diagnosis",
   "nav": {
     "label": "Main",
@@ -189,6 +212,13 @@
     "back": "Back to home",
     "backShort": "Home",
     "updated": "Last updated:"
+  },
+  "notFound": {
+    "eyebrow": "Error 404",
+    "title": "Page not found",
+    "text": "The page you are looking for doesn't exist or has moved.",
+    "home": "Go to home",
+    "whatsapp": "Message us on WhatsApp"
   },
   "fab": {
     "label": "Free diagnosis",

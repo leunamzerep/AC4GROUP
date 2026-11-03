@@ -1,6 +1,7 @@
 import { createContext, useContext } from 'react'
 import en from './content/en.json'
 import es from './content/es.json'
+import { SITE } from './content/site'
 
 // Idiomas y textos. Cada idioma tiene su propio archivo JSON en src/content.
 // es.json manda: en.json debe tener exactamente la misma estructura (TypeScript lo verifica).
@@ -19,6 +20,14 @@ const PATHS: Record<PageKey, Record<Lang, string>> = {
 
 /** URL interna con la base del sitio, p. ej. pagePath('terms', 'es') → /AC4GROUP/terminos/ */
 export const pagePath = (page: PageKey, lang: Lang) => import.meta.env.BASE_URL + PATHS[page][lang]
+
+/** URL absoluta (para canonical, hreflang, Open Graph y sitemap). */
+export const absoluteUrl = (page: PageKey, lang: Lang) => SITE.url + PATHS[page][lang]
+
+/** Todas las rutas que se prerenderizan (ver scripts/prerender.mjs). */
+export const ROUTES = (Object.keys(PATHS) as PageKey[]).flatMap((page) =>
+  (['es', 'en'] as Lang[]).map((lang) => ({ page, lang, path: PATHS[page][lang] })),
+)
 
 /** Deduce idioma y página a partir de la URL (p. ej. /AC4GROUP/en/terms/ → en, terms). */
 export function routeFromPath(pathname: string): { lang: Lang; page: PageKey } {

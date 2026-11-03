@@ -3,6 +3,29 @@
     "lang": "es",
     "htmlLang": "es-CO"
   },
+  "seo": {
+    "home": {
+      "title": "AC4 Group | Agencia de Meta Ads en Bogotá – Facebook e Instagram Ads",
+      "description": "Campañas de Meta Ads para pymes, e-commerce y marcas en Bogotá. Estrategia, datos y resultados medibles. Pide tu diagnóstico gratuito por WhatsApp.",
+      "ogTitle": "AC4 Group | Agencia de Meta Ads en Bogotá",
+      "ogDescription": "Estrategia, datos y resultados medibles. Pide tu diagnóstico gratuito por WhatsApp."
+    },
+    "terms": {
+      "title": "Términos y Condiciones | AC4 Group",
+      "description": "Términos y Condiciones de los servicios de Meta Ads de AC4 Group en Bogotá, Colombia."
+    },
+    "privacy": {
+      "title": "Política de Privacidad | AC4 Group",
+      "description": "Política de Privacidad y tratamiento de datos personales de AC4 Group (Ley 1581 de 2012)."
+    },
+    "notFound": {
+      "title": "Página no encontrada | AC4 Group",
+      "description": "La página que buscas no existe."
+    },
+    "ogImageAlt": "AC4 Group — Agencia de Meta Ads en Bogotá. Estrategia · Datos · Resultados",
+    "ogLocale": "es_CO",
+    "businessDescription": "Agencia de Meta Ads en Bogotá: campañas de publicidad en Facebook e Instagram para pymes, e-commerce y marcas."
+  },
   "whatsappMessage": "Hola AC4, quiero mi diagnóstico gratuito",
   "nav": {
     "label": "Principal",
@@ -189,6 +212,13 @@
     "back": "Volver al inicio",
     "backShort": "Inicio",
     "updated": "Última actualización:"
+  },
+  "notFound": {
+    "eyebrow": "Error 404",
+    "title": "Página no encontrada",
+    "text": "La página que buscas no existe o cambió de dirección.",
+    "home": "Ir al inicio",
+    "whatsapp": "Escríbenos por WhatsApp"
   },
   "fab": {
     "label": "Diagnóstico gratuito",
