@@ -36,14 +36,14 @@ export default function Header({ menuOpen, onMenuChange }: Props) {
   return (
     <>
       <header className="fixed inset-x-0 top-3 z-50 px-[clamp(12px,2vw,24px)]">
-        <div className="ac4-header-glass mx-auto flex h-16 max-w-[1280px] items-center gap-4 rounded-[20px] pr-2.5 pl-5">
+        <div className="ac4-header-glass mx-auto flex h-16 max-w-[1280px] items-center gap-4 rounded-[20px] lg:max-[1100px]:gap-2 pr-2.5 pl-5">
           <a href={onLanding ? '#inicio' : pagePath('home', lang)} aria-label={t.nav.homeLabel} className="flex flex-none items-center text-white">
             <Logo variant="horizontal" height={24} />
           </a>
 
           <nav aria-label={t.nav.label} className="mx-auto hidden items-center gap-0.5 lg:flex">
             {t.nav.items.map((item) => (
-              <a key={item.id} className="ac4-nav__link" href={sectionHref(item.id)} aria-current={active === item.id ? 'true' : undefined}>
+              <a key={item.id} className="ac4-nav__link whitespace-nowrap" href={sectionHref(item.id)} aria-current={active === item.id ? 'true' : undefined}>
                 {item.label}
               </a>
             ))}

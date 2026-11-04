@@ -13,15 +13,15 @@ export default function Hero() {
   const { t } = useI18n()
   const h = t.hero
   return (
-    <section id="inicio" className="relative isolate overflow-hidden pt-[clamp(128px,14vw,184px)] pb-[clamp(64px,7vw,104px)]">
+    <section id="inicio" className="relative isolate overflow-hidden pt-[clamp(128px,14vw,184px)] pb-[clamp(64px,7vw,104px)] min-[640px]:max-[1439px]:pt-[clamp(104px,15vh,136px)] min-[640px]:max-[1439px]:pb-[clamp(56px,6vw,80px)]">
       {/* Aurora de fondo (solo hero y contacto). La animación lenta llega en la fase 5. */}
       <div aria-hidden="true" className="ac4-aurora-hero absolute -inset-x-[10%] -top-[20%] bottom-0 -z-30" />
       <div aria-hidden="true" className="ac4-texture-grid ac4-hero-grid absolute inset-0 -z-20" />
 
-      <div className="ac4-container grid items-center gap-[clamp(40px,5vw,64px)] [grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr))]">
+      <div className="ac4-container grid grid-cols-1 items-center gap-[clamp(40px,5vw,64px)] lg:grid-cols-2 lg:max-[1439px]:gap-[clamp(32px,4vw,56px)]">
         {/* Entrada en CSS (ver .ac4-hero-in en site.css): el hero no espera a JavaScript. */}
         <div>
-          <div className="ac4-hero-in flex flex-col items-start gap-6">
+          <div className="ac4-hero-in flex flex-col items-start gap-6 lg:max-[1439px]:gap-5">
             <Eyebrow>{h.eyebrow}</Eyebrow>
             <h1 className="max-w-[14ch] text-[clamp(2.6rem,1.4rem+4.4vw,4.75rem)] leading-[1.02] tracking-[-0.005em]">
               {h.titleBefore} <span className="ac4-text-gold-gradient">{h.titleHighlight}</span>
@@ -52,7 +52,7 @@ export default function Hero() {
         </div>
 
         {/* Visual decorativo: onda de marca + tablero ilustrativo (cifras de ejemplo, no de clientes). */}
-        <div aria-hidden="true" className="ac4-hero-visual relative aspect-square w-full max-w-[560px] justify-self-center">
+        <div aria-hidden="true" className="ac4-hero-visual relative aspect-square w-full max-w-[560px] justify-self-center min-[640px]:max-lg:aspect-auto min-[640px]:max-lg:h-[clamp(360px,46vw,440px)] min-[640px]:max-lg:max-w-none">
           <img
             src={WAVE.src}
             srcSet={WAVE.srcSet}
