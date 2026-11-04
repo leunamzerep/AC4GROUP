@@ -13,17 +13,17 @@ export default function Hero() {
   const { t } = useI18n()
   const h = t.hero
   return (
-    <section id="inicio" className="relative isolate overflow-hidden pt-[clamp(128px,14vw,184px)] pb-[clamp(64px,7vw,104px)] min-[640px]:max-[1439px]:pt-[clamp(104px,15vh,136px)] min-[640px]:max-[1439px]:pb-[clamp(56px,6vw,80px)]">
+    <section id="inicio" className="relative isolate overflow-hidden pt-[clamp(128px,14vw,184px)] pb-[clamp(64px,7vw,104px)] min-[640px]:max-[1440px]:pt-[clamp(104px,15vh,136px)] min-[640px]:max-[1440px]:pb-[clamp(56px,6vw,80px)]">
       {/* Aurora de fondo (solo hero y contacto). La animación lenta llega en la fase 5. */}
       <div aria-hidden="true" className="ac4-aurora-hero absolute -inset-x-[10%] -top-[20%] bottom-0 -z-30" />
       <div aria-hidden="true" className="ac4-texture-grid ac4-hero-grid absolute inset-0 -z-20" />
 
-      <div className="ac4-container grid grid-cols-1 items-center gap-[clamp(40px,5vw,64px)] lg:grid-cols-2 lg:max-[1439px]:gap-[clamp(32px,4vw,56px)]">
+      <div className="ac4-container grid grid-cols-1 items-center gap-[clamp(40px,5vw,64px)] lg:grid-cols-2 lg:max-[1440px]:gap-[clamp(32px,4vw,56px)]">
         {/* Entrada en CSS (ver .ac4-hero-in en site.css): el hero no espera a JavaScript. */}
         <div>
-          <div className="ac4-hero-in flex flex-col items-start gap-6 lg:max-[1439px]:gap-5">
+          <div className="ac4-hero-in flex flex-col items-start gap-6 lg:max-[1440px]:gap-5">
             <Eyebrow>{h.eyebrow}</Eyebrow>
-            <h1 className="max-w-[14ch] text-[clamp(2.6rem,1.4rem+4.4vw,4.75rem)] leading-[1.02] tracking-[-0.005em]">
+            <h1 className="max-w-[14ch] text-[clamp(2.6rem,1.4rem+4.4vw,4.75rem)] leading-[1.02] tracking-[-0.005em] lg:max-[1440px]:text-[clamp(2.75rem,min(0.75rem+3.6vw,10vh),4rem)]">
               {h.titleBefore} <span className="ac4-text-gold-gradient">{h.titleHighlight}</span>
             </h1>
             <p className="ac4-lead max-w-[52ch]">{h.lead}</p>
@@ -63,7 +63,7 @@ export default function Hero() {
             fetchPriority="high"
             className="ac4-hero-wave absolute -top-[6%] -right-[30%] -bottom-[6%] -left-[12%] h-[112%] w-[142%] max-w-none object-cover opacity-95"
           />
-          <div className="ac4-hero-dash absolute bottom-[4%] left-0 flex w-[min(100%,360px)] flex-col gap-3.5 rounded-[20px] p-[18px]">
+          <div className="ac4-hero-dash absolute bottom-[4%] left-0 flex w-[min(100%,360px)] flex-col gap-3.5 rounded-[20px] p-[18px] lg:max-[1440px]:top-[44%] lg:max-[1440px]:bottom-auto lg:max-[1440px]:left-1/2 lg:max-[1440px]:-translate-x-1/2 lg:max-[1440px]:-translate-y-1/2">
             <div className="flex items-center justify-between gap-3">
               <span className="ac4-dash__title">
                 <span className="ac4-dash__live" />
